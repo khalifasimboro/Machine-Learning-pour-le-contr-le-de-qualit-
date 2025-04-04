@@ -1,6 +1,6 @@
 # Machine-Learning-pour-le-contr-le-de-qualit-
 L’objectif de est de développer un modèle de classification pour le contrôle qualité des puces semi-conductrices.
-# 🎯 TP1 - Machine Learning pour le Contrôle Qualité
+# TP1 - Machine Learning pour le Contrôle Qualité
 
 Ce projet vise à appliquer des algorithmes de classification supervisée sur le dataset **SECOM** pour détecter les défauts de qualité dans un processus industriel. Le modèle final est déployé via une API Flask.
 
