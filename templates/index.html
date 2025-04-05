@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prédiction avec modèle IA</title>
+</head>
+<body>
+    <h2>Formulaire de prédiction (24 features)</h2>
+    <form method="POST" action="/predict">
+        {% for i in range(1, 25) %}
+            <label>Feature {{ i }}:</label><br>
+            <input type="text" name="feature{{ i }}"><br><br>
+        {% endfor %}
+        <input type="submit" value="Prédire">
+    </form>
+
+    {% if prediction is not none %}
+        <h3>Résultat : {{ prediction }}</h3>
+    {% elif error %}
+        <h3 style="color:red;">Erreur : {{ error }}</h3>
+    {% endif %}
+</body>
+</html>
