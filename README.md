@@ -1,6 +1,6 @@
-# Machine-Learning-pour-le-contr-le-de-qualit-
-L’objectif de est de développer un modèle de classification pour le contrôle qualité des puces semi-conductrices.
-# TP1 - Machine Learning pour le Contrôle Qualité
+# Machine-Learning-pour-le-contr-le-de-qualit-e
+
+L’objectif est de développer un modèle de classification pour le contrôle qualité des puces semi-conductrices.
 
 Ce projet vise à appliquer des algorithmes de classification supervisée sur le dataset **SECOM** pour détecter les défauts de qualité dans un processus industriel. Le modèle final est déployé via une API Flask.
 
@@ -22,9 +22,7 @@ Ce projet vise à appliquer des algorithmes de classification supervisée sur le
 3. **Modèles testés**
    - Arbre de Décision
    - Random Forest
-   - AdaBoost
-   - Réseau de Neurones (MLPClassifier)
-
+   
 4. **Évaluation**
    - Accuracy, Précision, Rappel, F1-score
    - Matrices de confusion
@@ -50,4 +48,4 @@ Ce projet vise à appliquer des algorithmes de classification supervisée sur le
 ---
 
 ## 🚀 Structure du projet
-
+tp1-ml-controle-qualite/ │ ├── data/ # Dataset brut │ └── secom.csv │ ├── models/ # Modèles sauvegardés │ ├── random_forest_model.pkl │ ├── scaler_model.pkl │ └── pca_model.pkl │ ├── app/ # Code de l'API Flask │ └── api.py │ ├── notebooks/ # Explorations & entraînement │ └── exploration_modelisation.ipynb │ ├── performances/ │ └── tableau_performances.csv │ └── README.md # Ce fichier
