@@ -6,10 +6,10 @@ Ce projet vise à appliquer des algorithmes de classification supervisée sur le
 
 ---
 
-## 🛠️ Démarche Retenue
+## 1 Démarche Retenue
 
 1. **Nettoyage & Prétraitement**
-   - Suppression des colonnes à variance nulle
+   - Suppression des colonnes à variance minimale
    - Imputation des valeurs manquantes
    - Normalisation via `MinMaxScaler`
    - Réduction de dimension avec **PCA**
@@ -28,24 +28,24 @@ Ce projet vise à appliquer des algorithmes de classification supervisée sur le
    - Matrices de confusion
    - Courbes ROC & AUC
 
-5. **Déploiement**
+5.**Archivage wandbiaises**
+
+6. **Déploiement**
    - Sérialisation du modèle final (`joblib`)
    - API Flask avec endpoints `/predict` et `/test`
 
 ---
 
-## 📊 Tableau récapitulatif des performances
+## 2 Tableau récapitulatif des performances
 
 | Modèle             | Accuracy | Précision | Rappel | F1-score | AUC    | Validation croisée |
 |--------------------|----------|-----------|--------|----------|--------|---------------------|
-| Arbre de décision  | 0.82     | 0.80      | 0.79   | 0.79     | 0.84   | ✅                   |
+| Arbre de décision  | 0.79     | 0.80      | 0.79   | 0.79     | 0.84   | ✅                   |
 | Random Forest      | 0.89     | 0.88      | 0.86   | 0.87     | 0.92   | ✅                   |
-| AdaBoost           | 0.85     | 0.83      | 0.82   | 0.82     | 0.88   | ✅                   |
-| Réseau de neurones | 0.87     | 0.86      | 0.85   | 0.85     | 0.91   | ✅                   |
 
 > ✅ **Random Forest** a été retenu comme modèle final pour le déploiement.
 
 ---
 
-## 🚀 Structure du projet
+## 3 Structure du projet
 tp1-ml-controle-qualite/ │ ├── data/ # Dataset brut │ └── secom.csv │ ├── models/ # Modèles sauvegardés │ ├── random_forest_model.pkl │ ├── scaler_model.pkl │ └── pca_model.pkl │ ├── app/ # Code de l'API Flask │ └── api.py │ ├── notebooks/ # Explorations & entraînement │ └── exploration_modelisation.ipynb │ ├── performances/ │ └── tableau_performances.csv │ └── README.md # Ce fichier
